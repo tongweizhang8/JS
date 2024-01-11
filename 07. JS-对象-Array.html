@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-对象-Array</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var arr  = [1, 2, 3, 4, 5];
+    console.log(arr[0]);
+    //特点：长度可变，类型可变
+    var arr2 = [1, 2, 3, 4, 5];
+    arr2[10] = 50;
+    console.log(arr2[10]);
+    console.log(arr2[9]); //undefined
+    arr2[9] = 'A';
+    arr2[8] = true;
+    console.log(arr2);
+    for (let i = 0; i < arr2.length; i++) {
+        console.log(arr2[i]);
+    }
+    //foreach遍历数组中有值的元素
+    arr2.forEach(function (e) {
+        console.log(e);
+    })
+    //es6箭头函数
+    arr2.forEach ((e) => {
+        console.log(e);
+    })
+    //push添加元素到数组尾部
+    arr2.push(7,8,9);
+    console.log(arr2);
+    //splice:删除元素
+    arr2.splice(2,2);
+    console.log(arr2);
+</script>
+</html>

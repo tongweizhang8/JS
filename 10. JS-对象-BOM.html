@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-对象-BOM</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //属性
+    window.alert("hello world!");
+    alert("hello world!");
+    //方法
+    var flag = confirm("Are you sure you want to delete");
+    alert(flag);
+    //定时器setInterval周期性执行某一函数
+    var i = 0;
+    setInterval(function() {
+        i++;
+        console.log("定时器执行"+i+"次");
+    }, 2000);
+    //定时器setTimeOut延时指定时间执行一次
+    setTimeout(function() {
+        alert("js");
+    },3000)
+    //location返回完整的url
+    alert(location.href);
+    location.href = "http://localhost"; 
+</script>
+</html>
